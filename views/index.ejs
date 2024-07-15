@@ -67,7 +67,7 @@
                         <p><em><%= __('Do not reload! Your entry has been deleted already.') %></em></p>
                     <%} else {%>
                         <p><%= __('You can access the secret message now. Please note that the message will be deleted!') %></p>
-                        <input type="hidden" name="key" value="<%= key %>"/>
+                        <input type="hidden" name="id" value="<%= id %>"/>
                         <input type="hidden" name="show" value="true"/>
                         <button type="submit"><%= __('Show secret') %></button>
                     <%}%>
@@ -127,22 +127,6 @@
     });
 
 </script>
-
-<!-- End Document
-================================================== -->
-
-<!-- Piwik -->
-<script type="text/javascript">
-    var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.wemove.com/" : "http://piwik.wemove.com/");
-    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-    try {
-        var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-        piwikTracker.trackPageView();
-        piwikTracker.enableLinkTracking();
-    } catch( err ) {}
-</script><noscript><p><img src="https://piwik.wemove.com/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
 
 </body>
 </html>
